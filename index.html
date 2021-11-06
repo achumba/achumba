@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Ахчумба</title>
+<link rel="icon" href="favicon.ico">
+ </head>
+ <body>
+ <span>Эпилепсикам вход запрещен</span>
+ <h1>Сайт ахчумбы</h1>
+<div style="display: flex; justify-content: center;">
+ <img src="./sas.jpg">
+</div>
+<div style="display: flex;">
+<a href="https://www.youtube.com/">ХОЧЕШЬ НА ЮТУБ ? ТЫКАЙ СЮДА!</a>
+<a href="https://zoom.us/">ХОЧЕШЬ НА ЗУМ ? ТЫКАЙ СЮДА!</a>
+<a href="https://discord.com/">ХОЧЕШЬ НА ДИСКОРД ? ТЫКАЙ СЮДА!</a>
+</div>
+<a class="memes" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">MEMES</a>
+ </body>
+
+
+ <style>
+	
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+  background-color: gold;
+}
+	
+
+ span {
+  color: green;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 100px auto;
+font-size: 60px;
+animation: epic .1s infinite;
+}
+
+
+h1 {
+  color: red;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+animation: epic .1s infinite;	
+}
+
+img {
+ margin: 60px;
+border-radius: 10px;
+}
+@keyframes epic {
+
+0% {
+color: white;
+}
+
+
+100% {
+color: red;
+}
+
+}
+
+.active {
+background: purple;
+padding: 20px;
+}
+
+div > a:nth-child(1) {
+background: blue;
+}
+
+div > a:nth-child(3) {
+background: blue;
+}
+
+a{
+text-decoration: none;
+color: white;
+background: red;
+display : flex;
+justify-content: center;
+align-items: center;
+width: 200px;
+height: 80px;
+border-radius: 12px;
+margin: 0 auto;
+text-align: center;
+line-height: 1.25;
+transition: .5s;
+}
+
+div > a:hover {
+background: green;
+transition: .5s;
+}
+	
+.memes {
+text-decoration: none;
+color: white;
+background: red;
+border-radius: 50%;
+width: 300px;
+height: 300px;
+margin-top: 150px;
+transition: .5s;
+font-size: 40px;
+}
+.memes:hover {
+background: green;
+transition: .5s;
+}
+</style>
+
+
+<script>
+	const aha = document.querySelector('h1');
+
+	aha.addEventListener('click', ()=>{
+	aha.classList.toggle('active')
+})
+</script>
+
+ </html>
